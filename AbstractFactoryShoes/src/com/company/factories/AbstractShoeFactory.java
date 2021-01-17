@@ -1,16 +1,13 @@
-package com.company;
+package com.company.factories;
 
-import static com.company.ShoeType.BOOTS;
-import static com.company.ShoeType.SNEAKERS;
+import com.company.enumerations.ShoeType;
+import com.company.interfaces.ShoeTypeFactory;
 
 public abstract class AbstractShoeFactory {
 
-    //Sneakers
-    //Boots
+    public static ShoeTypeFactory getFactory(ShoeType shoeType) {
 
-    public static ShoeTypeFactory getFactory(ShoeType shoeType){
-
-        switch (shoeType){
+        switch (shoeType) {
             case SNEAKERS:
                 return new SneakerFactory();
             case BOOTS:

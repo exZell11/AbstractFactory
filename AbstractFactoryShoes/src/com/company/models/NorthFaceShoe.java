@@ -1,4 +1,6 @@
-package com.company;
+package com.company.models;
+
+import com.company.interfaces.Shoe;
 
 public class NorthFaceShoe implements Shoe {
 
